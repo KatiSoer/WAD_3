@@ -45,10 +45,5 @@ export default new Vuex.Store({
       }
     }
   },
-  actions: {
-    likePostAction: state => postId => {
-      state.commit("likePost", postId);
-    }
-  },
   modules: {},
 });
