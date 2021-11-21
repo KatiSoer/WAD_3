@@ -54,4 +54,8 @@
     text-align: left;
     font-size: 50px;
   }
+
+  .text {
+    background:#FCE3E7;
+  }
 </style>

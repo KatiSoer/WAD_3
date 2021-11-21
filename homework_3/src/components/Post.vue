@@ -42,5 +42,7 @@ export default {
 </script>
 
 <style scoped>
-
+.like {
+    cursor: pointer;
+}
 </style>
