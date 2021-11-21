@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Posts from "../views/Posts.vue";
 
 
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,7 +14,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about",
+    path: "/contact",
     name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

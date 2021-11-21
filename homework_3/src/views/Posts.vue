@@ -1,7 +1,9 @@
 <template>
     <div class="posts">
+        <Header />
+        <h2></h2> 
         <button v-on:click="reset()">RESET LIKES</button>
-        <h2> Welcome to catTinder!</h2>
+        <h2></h2>
         <div id="comp-list-one">
         <ul>
             <Post v-for="post in postListsale" 
@@ -9,17 +11,23 @@
             :id="post.id" />
         </ul>
         </div>
+        <h2></h2>
+        <Footer/>
     </div>
 </template>
 
 
 <script>
     import Post from "@/components/Post.vue";
+    import Header from "@/components/Header.vue";
+    import Footer from '../components/Footer.vue';
 
     export default {
         name: "Posts",
         components: { 
-            Post
+            Post,
+            Header,
+            Footer
         },
         computed: {
             postListsale() {
@@ -86,5 +94,9 @@
 
 div img {
 	cursor: pointer;
+}
+.posts h2{
+    text-align: center;
+    font-size: 50px;
 }
 </style>
